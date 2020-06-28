@@ -20,7 +20,6 @@ class CreateTransactionService {
     type,
     category,
   }: RequestDTO): Promise<Transaction> {
-    // TODO
     const transactionRepository = getCustomRepository(TransactionsRepository);
     const categoryRepository = getRepository(Category);
 
